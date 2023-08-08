@@ -1,0 +1,2 @@
+#!/bin/bash
+echi hello $USER
