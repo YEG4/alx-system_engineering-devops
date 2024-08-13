@@ -7,7 +7,6 @@ import requests
 
 def number_of_subscribers(subreddit):
     """This function returns the number of subscribers
-
     Args:
         subreddit (string): path to subreddit to get subscribers
     """
@@ -16,5 +15,4 @@ def number_of_subscribers(subreddit):
     if res.status_code == 404:
         return 0
     res = res.json().get("data").get("subscribers")
-    print(res)
     return res
