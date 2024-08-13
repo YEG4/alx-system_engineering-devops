@@ -25,10 +25,4 @@ def number_of_subscribers(subreddit):
             return 0
         res = res.json().get("data").get("subscribers")
         print(res)
-
-
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        sys.exit(0)
-    else:
-        number_of_subscribers(sys.argv[1])
+        return res
